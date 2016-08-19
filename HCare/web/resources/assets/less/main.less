@@ -1,0 +1,515 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Jun, 2016, 4:32:16 PM
+    Author     : Madhankumar
+*/
+
+
+/* --------------------------------------  navs  ----------------------------------------------- */
+
+// variable declarations
+@logo_font: Dosis, sans-serif;
+@nav_bgcolor: #04066f;
+@nav_bgcolor_light: #52549a;
+@navmenu_active: rgba(177, 178, 212, 0.62);
+@navmenu_active_hover: rgba(88, 91, 189, 0.62);
+@navmenu_inactive_hover: @navmenu_active_hover;
+
+@patientregform_h1_h2_font: @logo_font;
+@patientregform_h1_span_color: #080ba9;
+@patientregform_valid_color: #1FFF00;
+@patientregform_invalid_color: red;
+@patientregform_focus_text_color: @nav_bgcolor;
+
+
+.logo
+{
+    font-family: @logo_font;
+}
+.nav.navbar-nav 
+{
+    /* padding: 0px 20px; */
+}
+.navbar-default
+{
+    /*background-color: #267D90;*/
+    background-color: @nav_bgcolor;
+}
+.navbar-default .navbar-header .logo
+{
+    font-size: 32px;
+    color: #fff;
+}
+.navbar-nav li 
+{
+    /* border-right: 1px solid #54aec2; */
+    padding: 7px 0px;
+}
+.navbar-default .navbar-nav li a 
+{
+    text-shadow: 1px 1px 0px #20606D;
+    color: #fff;
+}
+.navbar-default .navbar-nav>.active
+{
+    /*background-color: rgba(5, 207, 252, 0.62);*/
+    background-color: @navmenu_active;
+    border-top: 4px ridge rgb(5, 207, 252);
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus 
+{
+    color: #fff;
+}
+li:last-child 
+{
+    border-right: transparent;
+}
+.navbar-default .navbar-nav>li:hover, .navbar-default .navbar-nav>li:focus {
+    background-color: @navmenu_inactive_hover;
+    color: white;
+    border-bottom: 4px ridge rgb(5, 207, 252);
+}
+.navbar-fixed-top .navbar-collapse
+{
+    /* max-height: 415px; */
+}
+.patientregform-fluid 
+{
+    margin-left: 20px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
+{
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active:hover 
+{
+    background-color: @navmenu_active_hover;
+    border-bottom: none;
+}
+
+
+
+
+
+.patientregform input[type="text"],input[type="password"], .patientregform select {
+    border: 1px solid #ccc;
+    font-family: @patientregform_h1_h2_font;
+
+    font-size: 15px;
+    width: 270px;
+    height: 35px;
+    padding: 0 25px;
+    margin: 4px 0;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    display: inline-table;
+}
+
+.login input[type="text"],input[type="password"], .login select,
+.securedpasscode  input[type="text"],input[type="password"], .securedpasscode  select 
+{
+    border: 1px solid #ccc;
+    font-family: @patientregform_h1_h2_font;
+
+    font-size: 15px;
+    width: 270px;
+    height: 35px;
+    padding: 0 25px;
+    margin: 4px 0;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    display: inline-table;
+}
+
+.patientregform input[type="submit"]{
+    background: url('../img/sign_up.png') no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    position: relative;
+    bottom: 2px;
+    left: 35px;
+    background-size: 100% 100%;
+
+}
+
+.patientregform h2{
+    font-family: @patientregform_h1_h2_font;
+    font-size: 30px;
+    color: white;
+
+}
+
+.login h2{
+    font-family: @patientregform_h1_h2_font;
+    font-size: 30px;
+    color: white;
+    padding-bottom:20px;
+}
+
+h3{
+    font-family: @patientregform_h1_h2_font;
+    font-size: 20px;
+    color:white;
+    padding-bottom:20px;
+}
+
+.patientregform , .login terms{
+    font-family: @patientregform_h1_h2_font;
+    font-size: 15px;
+    color: white;
+
+}
+
+.countrycd{
+    padding-left:10px;
+    padding-right:10px;
+    position: relative;
+    left:3px;
+    margin-bottom:5px;
+    width:20px !important;
+}
+
+span.country-name{
+    color: @nav_bgcolor;
+}
+
+
+.intl-tel-input {
+    display: block !important;
+}
+
+.countryerror{
+    width: 270px;
+    font-size: 15px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    color:#a94442;
+    line-height: 1.42857143;
+}
+.login input[type="submit"]{
+    background: url('../img/login_button_01.png') no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    position: relative;
+    bottom: 2px;
+    left: 15px;
+    background-size: 100% 100%;
+
+}
+
+
+.registerbtn {
+    background: url('../img/Join Now_0.png') no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 60px;
+    position: relative;
+    bottom: 2px;
+    left: 15px;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+body{
+    background: #ddd url(../../../resources/assets/img/egg_shell.jpg) repeat top left !important;
+ 
+}
+.patientregform  {
+    //  min-width: 320px;
+    padding-left: 20px;
+    padding-right: 25px;
+    // padding-top: 50px;
+    float: right;
+    background-color: #04066f;
+    // border-radius: 10px;
+    //background:  url('../img/cotton.jpg') no-repeat;
+    //background-color: white;
+    //  border-radius:10px;
+    position: relative;
+    right: 50px;
+    top: 60px;
+    border-radius: 10px;
+}
+
+.login,.securedpasscode {
+    padding-left: 20px;
+    padding-right: 25px;
+    // padding-top: 50px;
+    float: right;
+    background-color: #04066f;
+    // border-radius: 10px;
+    //background:  url('../img/cotton.jpg') no-repeat;
+    //background-color: white;
+    //  border-radius:10px;
+    position: relative;
+    right: 100px;
+    top: 60px;
+    // width:30%;
+    border-color: white;
+    border: solid 1px #d4d4d4;
+    border-radius: 10px;
+    border-width: thin;
+    opacity: 0.8;
+
+
+}
+.patientregform form{
+    // padding-top: 80px;
+
+}
+.patientregform .afterlogin{
+    width:20px;
+    float:right;
+}
+
+.signup{
+
+    padding-top: 50px;
+}
+
+.signup h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.help-block{
+    width:270px;
+    font-size:15px;
+    margin-top:1px;
+    margin-bottom: 2px;
+}
+
+
+
+button.btn {
+    // height: 35px;
+    // margin-top:5px;
+    // margin-bottom:30px;
+    // margin-left: 20px;
+    margin-top:15px !important;
+    margin-right: 5px !important;
+    padding: 0 20px !important;
+    vertical-align: middle !important;
+    background: @nav_bgcolor !important;
+    border: 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 35px !important;
+    color: #fff !important;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px !important;
+    text-shadow: none !important;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none !important;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s !important;
+}
+
+button.btn:hover { opacity: 0.6; color: #fff; }
+
+button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+button.btn:focus { outline: 0; opacity: 0.6; background: @nav_bgcolor; color: #fff; }
+
+button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: @nav_bgcolor; color: #fff; }
+
+.form-horizontal .form-group{
+    padding-left:10px;
+    padding-right:10px;
+    position: relative;
+    left:3px;
+    margin-bottom:15px;
+}
+
+.checkbox{
+    padding-top: 17px !important;
+}
+
+
+// Strong password css
+
+
+body {
+    font-family: Helvetica; 
+}
+
+.donation-meter {
+    // padding-top: 100px;
+    //  margin-left: 30px;
+    width: 20px;
+
+    padding-left: 10px;
+    //padding-right: 25px;
+    // padding-top: 50px;
+    float: right;
+    background-color: #04066f;
+    //  border-radius: 10px;
+
+    position: relative;
+    right: 50px;
+    height:533px;
+    //padding-top:82px;
+
+    .glass {
+        background: #e5e5e5;
+        border-radius: 100px 100px 100px 100px;
+        display: block;
+        height: 400px;
+        margin: 0 35px 10px;
+        // padding: 5px;
+        position: relative;
+        width: 20px;
+        top:-10px;
+    }
+    .amount {
+        background: #f34e54;
+        border-radius: 100px;
+        display: block;
+        width: 20px;
+        position: absolute;
+
+    }
+    strong { display: block; text-align: center; }
+    .goal {
+        font-size: 30px;
+    }
+    .total {
+        font-size: 16px;
+        position: absolute;
+        right: 35px;
+    }
+}
+
+.bulb {
+    background: #e5e5e5;
+    border-radius: 100px;
+    display: block;
+    height: 50px;
+    margin: 0 35px 10px;
+    //  padding: 5px;
+    position: relative;
+    top:10px;
+    right: 15px;
+    width: 50px;
+    .red-circle {
+        background: #f34e54;
+        border-radius: 100px;
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+    .filler {
+        background: #f34e54;
+        border-radius: 100px 100px 0 0;
+        display: block;
+        height: 30px;
+        width: 20px;
+        position: relative;
+        top: -10px;
+        right: -15px;
+        z-index: 30;
+    }
+}
+
+.hrline-container{
+
+    width: 100% !important;
+    display: flex;
+}
+
+.hrline{
+    height:1px;
+    background: white;
+    width:35%;
+
+}
+
+.hr-text{
+    color: white;
+    width: 160px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+    margin-top:8px;
+    margin-right: 8px;
+}
+.sociallogo{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+
+}
+
+.sociallogo img{
+    padding:7px;
+    height:80%;
+    width:80%;
+
+}
+
+
+.forgotpwd{
+    font-family: @patientregform_h1_h2_font;
+    font-size: 16px;
+    color: white;
+    float:right;
+    padding-right: 50px;
+}
+
+.forgotpwd a:focus, a:hover{
+    color:white;
+}
+
+
+.wrapper{
+ position: inherit !important;   
+}
+
+.main-footer{
+    padding: 8px !important;
+}
+
+.btn-primary{
+    background-color: @nav_bgcolor !important;
+        
+}
+
+.homepagebtn{
+    margin-top:15px !important;
+    margin-right: 5px !important;
+    padding: 0 20px !important;
+    vertical-align: middle !important;
+    background: @nav_bgcolor_light !important;
+    border: 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+    line-height: 35px !important;
+    color: #fff !important;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px !important;
+    text-shadow: none !important;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none !important;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s !important;
+
+}
+
+button.homepagebtn:hover { opacity: 0.6; color: #fff; }
+
+button.homepagebtn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+button.homepagebtn:focus { outline: 0; opacity: 0.6; background: @nav_bgcolor; color: #fff; }
+
+button.homepagebtn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: @nav_bgcolor; color: #fff; }

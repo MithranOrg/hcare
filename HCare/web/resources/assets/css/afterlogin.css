@@ -1,0 +1,241 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 Jul, 2016, 11:19:14 PM
+    Author     : Madhankumar
+*/
+.profile {
+  position: relative;
+  width: inherit;
+  background-color: #a9a9b2;
+  font-size: 12px;
+  border: 1px solid rgba(103, 104, 133, 0.66);
+}
+.profile-header {
+  height: 50px;
+  width: 100%;
+  background-color: #a9a9b2;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.profile-body {
+  height: 125px;
+  display: flex;
+  margin-left: 20px;
+}
+.nav-tabs-custom > .nav-tabs > li.active {
+  font-weight: bold;
+  border-bottom: 3px solid #3c8dbc !important;
+  margin-bottom: -2px !important;
+  margin-right: 5px !important;
+  border-top: 0px !important;
+}
+.profilebox {
+  border: 2px;
+  border-color: #898484;
+  display: block;
+  border-style: solid;
+}
+i.fa.fa-arrow-circle-right {
+  margin-left: 15px;
+}
+.profile-widget {
+  max-height: 250px;
+  padding: 10%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile-content {
+  padding: 45px !important;
+}
+.edit-div {
+  display: none;
+  padding: 5px;
+}
+.edit-div.active {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 13px;
+  background: #fff;
+  min-height: 80px;
+}
+.row {
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+.box1 {
+  display: inline;
+  float: left;
+}
+.noleftmargin {
+  margin-left: 0px;
+}
+.norightmargin {
+  margin-right: 0px;
+}
+.notopmargin {
+  margin-top: 0px;
+}
+.bottommargin_10 {
+  margin-bottom: 10px;
+}
+.topmargin_10 {
+  margin-top: 10px;
+}
+.topmargin_5 {
+  margin-top: 5px;
+}
+.profilebox_950 {
+  width: 950px;
+}
+.profilebox_850 {
+  width: 850px;
+}
+.leftmargin_10 {
+  margin-left: 10px !important;
+}
+.rightmargin_10 {
+  margin-right: 10px !important;
+}
+.editor-block {
+  margin-top: -1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  border: 1px solid #d0d0d0;
+  padding: 9px 9px 19px 19px;
+  background: #fff;
+  min-height: 80px;
+}
+.profile-thumbnail {
+  height: 120px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+  line-height: 1;
+}
+.edit-label {
+  margin: 10px 0 10px !important;
+}
+.change-photo {
+  position: absolute;
+  width: 150px;
+  line-height: 30px;
+  border-radius: 0 0 5px 5px;
+  background: #000;
+  opacity: .6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+.change-photo:hover {
+  opacity: .8;
+}
+.profilename {
+  font-size: 25px;
+  font-weight: 500px;
+  font-family: Dosis, sans-serif;
+  color: #04066f;
+}
+.profile_p {
+  font-size: 14px;
+  font-weight: 350px;
+  font-family: Dosis, sans-serif;
+  color: #04066f;
+}
+.btn {
+  margin-left: 5px;
+}
+.required-field-indicator {
+  color: red;
+}
+.rightbox1 {
+  padding-right: 0px;
+  float: right;
+}
+.profilesubmit {
+  float: right;
+  margin-right: 0px;
+}
+.text-info:active {
+  display: inline-block;
+}
+.selectcontrol {
+  width: 65px;
+}
+.form-group.has-error label,
+.form-group.has-success label {
+  color: black !important;
+}
+.box-title {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  font-family: Dosis, sans-serif !important;
+  color: #04066f !important;
+  margin-left: 5px !important;
+}
+button#btnAdd,
+button#btnDel {
+  padding-top: 4px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 22px !important;
+}
+.clonestyle {
+  margin-top: 10px !important ;
+}
+.smalltextinfo_20 {
+  padding: 5px !important;
+  width: 20% !important;
+}
+.smalltextinfo_25 {
+  padding: 5px !important;
+  width: 25% !important;
+}
+.smalltextinfo_15 {
+  padding: 5px !important;
+  width: 15% !important;
+}
+.smalltextinfo_10 {
+  padding: 5px !important;
+  width: 10% !important;
+}
+.smalltextinfo_5 {
+  padding: 5px !important;
+  width: 5% !important;
+}
+.smalltextinfo_3 {
+  padding: 5px !important;
+  width: 3% !important;
+}
+.select2-container .select2-selection--single {
+  height: 34px !important;
+}
+.bg-blue {
+  background-color: #04066f !important;
+}
+.navbar-nav > .user-menu .user-image {
+  width: 38px !important;
+  height: 38px !important;
+}
+.small-box > .inner {
+  padding: 5px !important;
+}
